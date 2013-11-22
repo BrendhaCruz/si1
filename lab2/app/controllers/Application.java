@@ -20,9 +20,7 @@ public class Application extends Controller {
 	  public static Result newTask() {
 		  Form<Task> filledForm = taskForm.bindFromRequest();
 		  if(filledForm.hasErrors()) {
-		    return badRequest(
-		      views.html.index.render(Task.all(), filledForm)
-		    );
+		    return badRequest(views.html.index.render(Task.all(), filledForm));
 		  } else {
 		    Task.create(filledForm.get());
 		    return redirect(routes.Application.tasks());  
@@ -35,5 +33,9 @@ public class Application extends Controller {
           return redirect(routes.Application.tasks());
 		
 		}
+	  public static Result updateTask(Long id) {
+          Task.update(id);
+          return redirect(routes.Application.tasks());
+  }
 	  
 	}
