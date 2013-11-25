@@ -1,15 +1,22 @@
 body {
-    font-family: Helvetica, Arial;
+    font-family: Arial;
     font-weight: lighter;
     text-align: center;
+    color:  #3366FF;
 }
 
 h1 {
-    color: #333;
+    color:  #3366FF
+;
 }
 
+h2 {
+    color:  #3366FF
+;
+}
 p {
-    color: #666;
+    color: #3366FF
+;
 }
 
 #clock {
@@ -23,7 +30,8 @@ p {
     position: relative;
     font-size: 64px;
     display: inline-block;
-    background: #222;
+    background: #3366FF
+;
     margin-right: 3px;
     padding: 0 10px;
     color: #fff;
@@ -52,8 +60,10 @@ p {
     top: 48%;
     bottom: 51%;
     text-indent: -999em;
-    color: #000;
-    background: #000;
+    color: #3366FF
+;
+    background:#3366FF
+;
 }
 
 #comet {
